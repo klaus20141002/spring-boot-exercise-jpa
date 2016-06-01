@@ -19,14 +19,17 @@ import org.apache.commons.lang.StringUtils;
  * 
  * handle image 
  * 
+ * GraphicsMagick
+ * ImageMagick
+ * 
  * @author Administrator
  *
  */
 public class ZoomImageScale {
 	public static void main(String[] args) throws IOException {
-		zoomImageScale(new File("C:\\Users\\Public\\Pictures\\Sample Pictures\\1.jpg"),
-				"C:\\Users\\Public\\Pictures\\Sample Pictures\\12.jpg",300);
-		constrainProportios(300,"C:\\Users\\Public\\Pictures\\Sample Pictures\\12.jpg");
+		zoomImageScale(new File("C:\\Users\\Public\\Pictures\\Sample Pictures\\IMG_20160529_111756.jpg"),
+				"C:\\Users\\Public\\Pictures\\Sample Pictures\\IMG_20160529_1117562.jpg",900);
+		constrainProportios(900,"C:\\Users\\Public\\Pictures\\Sample Pictures\\IMG_20160529_111756.jpg");
 	}
 
 	/**

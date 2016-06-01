@@ -13,8 +13,10 @@ import java.util.zip.ZipOutputStream;
 public class ZoomFileScale {
 	
 	public static void main(String[] args) {
-		ZipFile("C:\\Users\\Public\\Pictures\\Sample Pictures\\1.jpg",
-				"C:\\Users\\Public\\Pictures\\Sample Pictures\\1.zip");
+		long start = System.currentTimeMillis() ;
+		ZipFile("C:\\Users\\Public\\Pictures\\Sample Pictures\\IMG_20160529_111756.jpg",
+				"C:\\Users\\Public\\Pictures\\Sample Pictures\\IMG_20160529_111756.zip");
+		System.out.println("time used is :"+( System.currentTimeMillis()-start));
 	}
 	
 
