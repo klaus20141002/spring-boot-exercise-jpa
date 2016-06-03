@@ -17,9 +17,17 @@ import com.julie.mikaelson.common.user.repository.UserRepository;
 public class UserCtroller {
 	
 	private final Logger logger = Logger.getLogger(UserCtroller.class) ;
+	
 
 	@Autowired
 	private UserRepository userRepository ;
+	
+	@RequestMapping({"/","/home"})
+	public String showHome() {
+		logger.error("==============Go to Home=========================");
+		return "index";
+	}
+	
 	
 	@RequestMapping("/users")
 	@ResponseBody

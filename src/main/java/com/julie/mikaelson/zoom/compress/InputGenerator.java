@@ -8,7 +8,7 @@ import java.nio.file.Files;
  */
 public class InputGenerator {
     private static final String JAVADOC_PATH = "C:/Program Files/Java/jdk1.8.0_73/lib";
-    public static final File FILE_PATH = new File( "C:/Program Files/Java/javadoc" );
+    public static final File FILE_PATH = new File("C:/Program Files/Java/javadoc" );
 
     static
     {
